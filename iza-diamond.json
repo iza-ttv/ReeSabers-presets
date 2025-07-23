@@ -853,7 +853,7 @@
           "trailType": 1,
           "materialType": 0,
           "offset": 1.0,
-          "width": 0.25,
+          "width": 0.3,
           "distortionMultiplier": 1.0,
           "generalSettings": {
             "customTextureId": "",
@@ -947,7 +947,7 @@
                     }
                   },
                   {
-                    "time": 0.12,
+                    "time": 0.1,
                     "value": {
                       "r": 1.0,
                       "g": 0.0,
@@ -956,7 +956,7 @@
                     }
                   },
                   {
-                    "time": 0.5,
+                    "time": 0.4,
                     "value": {
                       "r": 0.5,
                       "g": 0.0,
@@ -1279,7 +1279,7 @@
           "trailType": 1,
           "materialType": 0,
           "offset": 1.02,
-          "width": 0.32,
+          "width": 0.35,
           "distortionMultiplier": 1.0,
           "generalSettings": {
             "customTextureId": "",
