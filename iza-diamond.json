@@ -681,16 +681,12 @@
                     "controlPoints": [
                       {
                         "time": 0.0,
-                        "value": 0.0
-                      },
-                      {
-                        "time": 1.0,
                         "value": 1.0
                       }
                     ]
                   },
                   "valueFrom": 0.0,
-                  "valueTo": 8.0
+                  "valueTo": 10.0
                 }
               },
               {
@@ -1107,16 +1103,12 @@
                     "controlPoints": [
                       {
                         "time": 0.0,
-                        "value": 0.0
-                      },
-                      {
-                        "time": 1.0,
                         "value": 1.0
                       }
                     ]
                   },
                   "valueFrom": 0.0,
-                  "valueTo": 14.0
+                  "valueTo": 16.0
                 }
               },
               {
@@ -1497,16 +1489,12 @@
                     "controlPoints": [
                       {
                         "time": 0.0,
-                        "value": 0.0
-                      },
-                      {
-                        "time": 1.0,
                         "value": 1.0
                       }
                     ]
                   },
                   "valueFrom": 0.0,
-                  "valueTo": 14.0
+                  "valueTo": 16.0
                 }
               },
               {
