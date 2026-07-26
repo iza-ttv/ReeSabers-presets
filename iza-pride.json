@@ -43,16 +43,16 @@
                 "value": 0.0
               },
               {
-                "time": 0.03,
+                "time": 0.029,
                 "value": 0.7
               },
               {
-                "time": 0.111,
+                "time": 0.115,
                 "value": 0.7
               },
               {
-                "time": 0.11731571,
-                "value": 0.0
+                "time": 0.12,
+                "value": 0.093
               },
               {
                 "time": 0.145511687,
@@ -90,7 +90,7 @@
           },
           "maskSettings": {
             "bladeMaskResolution": 28,
-            "driversMaskResolution": 28,
+            "driversMaskResolution": 1,
             "handleMask": {
               "interpolationType": 2,
               "controlPoints": [

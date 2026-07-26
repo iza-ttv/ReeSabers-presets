@@ -68,9 +68,9 @@
           "endCap": true,
           "verticalResolution": 20,
           "horizontalResolution": 10,
-          "renderQueue": 3002,
+          "renderQueue": 3003,
           "cullMode": 0,
-          "depthWrite": true,
+          "depthWrite": false,
           "blurFrames": 2.0,
           "glowMultiplier": 0.6,
           "handleRoughness": 4.0,
@@ -82,7 +82,7 @@
           },
           "maskSettings": {
             "bladeMaskResolution": 28,
-            "driversMaskResolution": 28,
+            "driversMaskResolution": 1,
             "handleMask": {
               "interpolationType": 2,
               "controlPoints": [
@@ -285,7 +285,7 @@
           },
           "maskSettings": {
             "bladeMaskResolution": 4,
-            "driversMaskResolution": 4,
+            "driversMaskResolution": 1,
             "handleMask": {
               "interpolationType": 2,
               "controlPoints": [
