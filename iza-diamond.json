@@ -1,6 +1,9 @@
 {
-  "ModVersion": "0.3.9",
+  "ModVersion": "0.3.18",
   "Version": 1,
+  "RootSettings": {
+    "Type": 0
+  },
   "LocalTransform": {
     "Position": {
       "x": 0.0,
@@ -21,12 +24,13 @@
   "Modules": [
     {
       "ModuleId": "reezonate.blur-saber",
-      "Version": 1,
+      "Version": 2,
       "Config": {
-        "SaberSettings": {
+        "MeshSettings": {
           "zOffsetFrom": -0.17,
           "zOffsetTo": 1.0,
-          "thickness": 1.07142854,
+          "radius": 0.012,
+          "stretchBias": 4.0,
           "saberProfile": {
             "interpolationType": 1,
             "controlPoints": [
@@ -43,8 +47,16 @@
                 "value": 0.0
               },
               {
-                "time": 0.11731571,
-                "value": 0.0
+                "time": 0.029,
+                "value": 0.7
+              },
+              {
+                "time": 0.115,
+                "value": 0.7
+              },
+              {
+                "time": 0.12,
+                "value": 0.093
               },
               {
                 "time": 0.145511687,
@@ -67,21 +79,36 @@
           "startCap": true,
           "endCap": true,
           "verticalResolution": 20,
-          "horizontalResolution": 10,
-          "renderQueue": 3003,
-          "cullMode": 0,
-          "depthWrite": false,
+          "horizontalResolution": 10
+        },
+        "MaterialSettings": {
           "blurFrames": 2.0,
-          "glowMultiplier": 0.6,
-          "handleRoughness": 4.0,
-          "handleColor": {
+          "blurSensitivity": 0.6,
+          "reflectionColor": {
             "r": 0.05,
             "g": 0.00500000129,
             "b": 0.00500000129,
             "a": 0.0
           },
+          "envLightColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "fresnelPower": 5.0,
+          "metallic": 0.0,
+          "roughness": 0.428571433,
+          "envLightIntensity": 1.0,
+          "reflectionIntensity": 1.0,
+          "normalMapIntensity": 1.0,
+          "sceneReflections": false,
+          "sceneLights": false,
+          "renderQueue": 3002,
+          "cullMode": 0,
+          "depthWrite": false,
           "maskSettings": {
-            "bladeMaskResolution": 28,
+            "bladeMaskResolution": 48,
             "driversMaskResolution": 1,
             "handleMask": {
               "interpolationType": 2,
@@ -107,6 +134,42 @@
                       "g": 0.0,
                       "b": 0.2,
                       "a": 0.15
+                    }
+                  },
+                  {
+                    "time": 0.019,
+                    "value": {
+                      "r": 0.160000041,
+                      "g": 0.0,
+                      "b": 0.2,
+                      "a": 0.15
+                    }
+                  },
+                  {
+                    "time": 0.02,
+                    "value": {
+                      "r": 0.0200000051,
+                      "g": 0.0380000323,
+                      "b": 0.2,
+                      "a": 0.1
+                    }
+                  },
+                  {
+                    "time": 0.12,
+                    "value": {
+                      "r": 0.0559999719,
+                      "g": 0.0200000051,
+                      "b": 0.2,
+                      "a": 0.1
+                    }
+                  },
+                  {
+                    "time": 0.121,
+                    "value": {
+                      "r": 0.279424071,
+                      "g": 0.0,
+                      "b": 0.296,
+                      "a": 0.252
                     }
                   },
                   {
@@ -217,6 +280,18 @@
             "drivers": []
           }
         },
+        "TexturesSettings": {
+          "tilingLayout": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 0.0,
+            "w": 0.0
+          },
+          "uvScroll": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
         "Enabled": true,
         "Name": "Saber",
         "LocalTransform": {
@@ -235,211 +310,19 @@
             "y": 1.0,
             "z": 1.0
           }
-        }
-      }
-    },
-    {
-      "ModuleId": "reezonate.blur-saber",
-      "Version": 1,
-      "Config": {
-        "SaberSettings": {
-          "zOffsetFrom": -0.141,
-          "zOffsetTo": -0.03,
-          "thickness": 1.07142854,
-          "saberProfile": {
-            "interpolationType": 1,
-            "controlPoints": [
-              {
-                "time": 0.0,
-                "value": 0.3
-              },
-              {
-                "time": 0.05,
-                "value": 0.7
-              },
-              {
-                "time": 0.95,
-                "value": 0.7
-              },
-              {
-                "time": 0.9998865,
-                "value": 0.3
-              }
-            ]
-          },
-          "startCap": true,
-          "endCap": true,
-          "verticalResolution": 10,
-          "horizontalResolution": 2,
-          "renderQueue": 3002,
-          "cullMode": 0,
-          "depthWrite": false,
-          "blurFrames": 2.0,
-          "glowMultiplier": 0.6,
-          "handleRoughness": 1.0,
-          "handleColor": {
-            "r": 0.05,
-            "g": 0.00500000129,
-            "b": 0.00500000129,
-            "a": 0.0
-          },
-          "maskSettings": {
-            "bladeMaskResolution": 4,
-            "driversMaskResolution": 1,
-            "handleMask": {
-              "interpolationType": 2,
-              "controlPoints": [
-                {
-                  "time": 0.0,
-                  "value": 0.0
-                },
-                {
-                  "time": 0.128,
-                  "value": 0.0
-                }
-              ]
-            },
-            "bladeMappings": {
-              "colorOverValue": {
-                "interpolationType": 0,
-                "controlPoints": [
-                  {
-                    "time": 0.0,
-                    "value": {
-                      "r": 0.0200000051,
-                      "g": 0.0380000323,
-                      "b": 0.2,
-                      "a": 0.1
-                    }
-                  },
-                  {
-                    "time": 1.0,
-                    "value": {
-                      "r": 0.0559999719,
-                      "g": 0.0200000051,
-                      "b": 0.2,
-                      "a": 0.1
-                    }
-                  }
-                ]
-              },
-              "alphaOverValue": {
-                "interpolationType": 0,
-                "controlPoints": [
-                  {
-                    "time": 0.0,
-                    "value": 1.0
-                  }
-                ]
-              },
-              "scaleOverValue": {
-                "interpolationType": 0,
-                "controlPoints": [
-                  {
-                    "time": 0.0,
-                    "value": 1.0
-                  }
-                ]
-              },
-              "valueFrom": 0.0,
-              "valueTo": 1.0
-            },
-            "driversSampleMode": 0,
-            "viewingAngleMappings": {
-              "colorOverValue": {
-                "interpolationType": 0,
-                "controlPoints": [
-                  {
-                    "time": 0.0,
-                    "value": {
-                      "r": 1.0,
-                      "g": 1.0,
-                      "b": 1.0,
-                      "a": 1.0
-                    }
-                  }
-                ]
-              },
-              "alphaOverValue": {
-                "interpolationType": 0,
-                "controlPoints": [
-                  {
-                    "time": 0.0,
-                    "value": 1.0
-                  }
-                ]
-              },
-              "scaleOverValue": {
-                "interpolationType": 0,
-                "controlPoints": [
-                  {
-                    "time": 0.0,
-                    "value": 1.0
-                  }
-                ]
-              },
-              "valueFrom": 0.0,
-              "valueTo": 1.0
-            },
-            "surfaceAngleMappings": {
-              "colorOverValue": {
-                "interpolationType": 0,
-                "controlPoints": [
-                  {
-                    "time": 0.0,
-                    "value": {
-                      "r": 1.0,
-                      "g": 1.0,
-                      "b": 1.0,
-                      "a": 1.0
-                    }
-                  }
-                ]
-              },
-              "alphaOverValue": {
-                "interpolationType": 0,
-                "controlPoints": [
-                  {
-                    "time": 0.0,
-                    "value": 1.0
-                  }
-                ]
-              },
-              "scaleOverValue": {
-                "interpolationType": 0,
-                "controlPoints": [
-                  {
-                    "time": 0.0,
-                    "value": 1.0
-                  }
-                ]
-              },
-              "valueFrom": 0.0,
-              "valueTo": 1.0
-            },
-            "drivers": []
-          }
         },
-        "Enabled": true,
-        "Name": "Hilt",
-        "LocalTransform": {
-          "Position": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
-          },
-          "Rotation": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
-          },
-          "Scale": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0
-          }
+        "ForceColorOverride": false,
+        "ColorOverride": {
+          "type": 0,
+          "hue": 0.0,
+          "saturation": 1.0,
+          "value": 1.0,
+          "hueShiftPerSecond": 0.0,
+          "fakeGlowMultiplier": 1.0,
+          "colorSource": 0
         }
-      }
+      },
+      "Children": []
     },
     {
       "ModuleId": "reezonate.simple-trail",
@@ -453,16 +336,28 @@
         "MaterialSettings": {
           "trailType": 0,
           "materialType": 0,
+          "mappingType": 0,
           "offset": 1.0,
           "width": 0.018,
           "distortionMultiplier": 1.0,
           "generalSettings": {
             "customTextureId": "",
+            "opacityTextureId": "",
             "animationLayout": {
               "totalFrames": 1,
               "framesPerRow": 1,
               "framesPerColumn": 1,
               "frameDuration": 1.0
+            },
+            "tilingLayout": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 0.0,
+              "w": 0.0
+            },
+            "uvScroll": {
+              "x": 0.0,
+              "y": 0.0
             },
             "blendingMode": 0,
             "alwaysOnTop": false,
@@ -833,8 +728,19 @@
             "y": 1.0,
             "z": 1.0
           }
+        },
+        "ForceColorOverride": false,
+        "ColorOverride": {
+          "type": 0,
+          "hue": 0.0,
+          "saturation": 1.0,
+          "value": 1.0,
+          "hueShiftPerSecond": 0.0,
+          "fakeGlowMultiplier": 1.0,
+          "colorSource": 0
         }
-      }
+      },
+      "Children": []
     },
     {
       "ModuleId": "reezonate.simple-trail",
@@ -848,16 +754,28 @@
         "MaterialSettings": {
           "trailType": 1,
           "materialType": 0,
+          "mappingType": 0,
           "offset": 1.0,
           "width": 0.3,
           "distortionMultiplier": 1.0,
           "generalSettings": {
             "customTextureId": "",
+            "opacityTextureId": "",
             "animationLayout": {
               "totalFrames": 1,
               "framesPerRow": 1,
               "framesPerColumn": 1,
               "frameDuration": 1.0
+            },
+            "tilingLayout": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 0.0,
+              "w": 0.0
+            },
+            "uvScroll": {
+              "x": 0.0,
+              "y": 0.0
             },
             "blendingMode": 0,
             "alwaysOnTop": false,
@@ -1255,8 +1173,19 @@
             "y": 1.0,
             "z": 1.0
           }
+        },
+        "ForceColorOverride": false,
+        "ColorOverride": {
+          "type": 0,
+          "hue": 0.0,
+          "saturation": 1.0,
+          "value": 1.0,
+          "hueShiftPerSecond": 0.0,
+          "fakeGlowMultiplier": 1.0,
+          "colorSource": 0
         }
-      }
+      },
+      "Children": []
     },
     {
       "ModuleId": "reezonate.simple-trail",
@@ -1270,16 +1199,28 @@
         "MaterialSettings": {
           "trailType": 1,
           "materialType": 0,
+          "mappingType": 0,
           "offset": 1.02,
           "width": 0.35,
           "distortionMultiplier": 1.0,
           "generalSettings": {
             "customTextureId": "",
+            "opacityTextureId": "",
             "animationLayout": {
               "totalFrames": 1,
               "framesPerRow": 1,
               "framesPerColumn": 1,
               "frameDuration": 1.0
+            },
+            "tilingLayout": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 0.0,
+              "w": 0.0
+            },
+            "uvScroll": {
+              "x": 0.0,
+              "y": 0.0
             },
             "blendingMode": 1,
             "alwaysOnTop": false,
@@ -1641,18 +1582,24 @@
             "y": 1.0,
             "z": 1.0
           }
+        },
+        "ForceColorOverride": false,
+        "ColorOverride": {
+          "type": 0,
+          "hue": 0.0,
+          "saturation": 1.0,
+          "value": 1.0,
+          "hueShiftPerSecond": 0.0,
+          "fakeGlowMultiplier": 1.0,
+          "colorSource": 0
         }
-      }
+      },
+      "Children": []
     },
     {
       "ModuleId": "reezonate.sparks-vfx",
       "Version": 1,
       "Config": {
-        "MeshSettings": {
-          "ParticlesCount": 600,
-          "HorizontalResolution": 1,
-          "VerticalResolution": 4
-        },
         "TrailSettings": {
           "Length": 0.15
         },
@@ -1662,11 +1609,22 @@
           "distortionMultiplier": 1.0,
           "generalSettings": {
             "customTextureId": "",
+            "opacityTextureId": "",
             "animationLayout": {
               "totalFrames": 1,
               "framesPerRow": 1,
               "framesPerColumn": 1,
               "frameDuration": 1.0
+            },
+            "tilingLayout": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 0.0,
+              "w": 0.0
+            },
+            "uvScroll": {
+              "x": 0.0,
+              "y": 0.0
             },
             "blendingMode": 0,
             "alwaysOnTop": false,
@@ -1974,6 +1932,40 @@
           "period": 0.05,
           "burstSpread": 0.8
         },
+        "Enabled": true,
+        "Name": "Cut Particles",
+        "LocalTransform": {
+          "Position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "ForceColorOverride": false,
+        "ColorOverride": {
+          "type": 0,
+          "hue": 0.0,
+          "saturation": 1.0,
+          "value": 1.0,
+          "hueShiftPerSecond": 0.0,
+          "fakeGlowMultiplier": 1.0,
+          "colorSource": 0
+        },
+        "MeshSettings": {
+          "ParticlesCount": 600,
+          "HorizontalResolution": 1,
+          "VerticalResolution": 4
+        },
         "SpawnSettings": {
           "MinLifetime": 0.1,
           "MaxLifetime": 0.5,
@@ -2015,27 +2007,13 @@
             "y": 0.0,
             "z": 0.0
           }
-        },
-        "Enabled": true,
-        "Name": "Cut Particles",
-        "LocalTransform": {
-          "Position": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
-          },
-          "Rotation": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
-          },
-          "Scale": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0
-          }
         }
-      }
+      },
+      "Children": []
     }
-  ]
+  ],
+  "BinaryAssets": {
+    "Textures": [],
+    "Geometry": []
+  }
 }
