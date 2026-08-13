@@ -29,7 +29,7 @@
         "MeshSettings": {
           "zOffsetFrom": -0.17,
           "zOffsetTo": 1.0,
-          "radius": 0.012,
+          "radius": 0.0132000009,
           "stretchBias": 4.0,
           "saberProfile": {
             "interpolationType": 1,
