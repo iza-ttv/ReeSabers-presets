@@ -4,8 +4,8 @@
 
 Recommended color settings: Glow 50%, Color Mode HueOverride
 
-### iza-diamond
+### iza-diamond ([Preview](https://reesabers.beatleader.com/?link=https://raw.githubusercontent.com/iza-ttv/ReeSabers-presets/refs/heads/master/iza-diamond.json))
 ![iza-diamond](https://github.com/user-attachments/assets/2f9c775d-8058-4002-be8e-9ed9f924c6db)
 
-### iza-pride
+### iza-pride ([Preview](https://reesabers.beatleader.com/?link=https://raw.githubusercontent.com/iza-ttv/ReeSabers-presets/refs/heads/master/iza-pride.json))
 ![iza-pride](https://github.com/user-attachments/assets/e5c57896-7cf2-41cc-a0b1-d322055415e1)
