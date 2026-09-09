@@ -133,7 +133,7 @@
                       "r": 0.160000041,
                       "g": 0.0,
                       "b": 0.2,
-                      "a": 0.15
+                      "a": 0.075
                     }
                   },
                   {
@@ -142,7 +142,7 @@
                       "r": 0.0,
                       "g": 0.159999952,
                       "b": 0.4,
-                      "a": 0.35
+                      "a": 0.175
                     }
                   },
                   {
@@ -151,7 +151,7 @@
                       "r": 0.0,
                       "g": 0.6,
                       "b": 0.240000069,
-                      "a": 0.55
+                      "a": 0.275
                     }
                   },
                   {
@@ -160,7 +160,7 @@
                       "r": 0.64,
                       "g": 0.8,
                       "b": 0.0,
-                      "a": 0.75
+                      "a": 0.375
                     }
                   },
                   {
@@ -169,7 +169,7 @@
                       "r": 1.0,
                       "g": 0.0,
                       "b": 0.0,
-                      "a": 1.0
+                      "a": 0.5
                     }
                   },
                   {
@@ -178,7 +178,7 @@
                       "r": 1.0,
                       "g": 0.0,
                       "b": 0.0,
-                      "a": 1.0
+                      "a": 0.5
                     }
                   }
                 ]
@@ -329,7 +329,7 @@
       "Version": 1,
       "Config": {
         "MeshSettings": {
-          "TrailLength": 0.28,
+          "TrailLength": 0.224,
           "HorizontalResolution": 1,
           "VerticalResolution": 80
         },
@@ -810,7 +810,7 @@
       "Version": 1,
       "Config": {
         "MeshSettings": {
-          "TrailLength": 0.3,
+          "TrailLength": 0.24,
           "HorizontalResolution": 4,
           "VerticalResolution": 80
         },
@@ -1318,7 +1318,7 @@
       "Version": 1,
       "Config": {
         "MeshSettings": {
-          "TrailLength": 0.38,
+          "TrailLength": 0.304,
           "HorizontalResolution": 4,
           "VerticalResolution": 80
         },

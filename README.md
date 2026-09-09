@@ -2,7 +2,7 @@
 
 [⬇️ **Download**](https://github.com/iza-ttv/ReeSabers-presets/archive/refs/heads/master.zip)
 
-Recommended color settings: Glow 50%, Color Mode HueOverride
+Recommended color mode: HueOverride
 
 ### iza-diamond ([Preview](https://reesabers.beatleader.com/?link=https://raw.githubusercontent.com/iza-ttv/ReeSabers-presets/refs/heads/master/iza-diamond.json))
 ![iza-diamond](https://github.com/user-attachments/assets/2f9c775d-8058-4002-be8e-9ed9f924c6db)
